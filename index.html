@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/form2.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>MediCure Hospital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reboot.css">
+  </head>
+  <body>
+      <header>
+        <div class="nav-bar">
+          <div class="logo">
+            <img src="images/medi.png" alt="logo" width="250px" height="100px">
+          </div>
+          <ul>
+            <li><a href ="home">Home</a></li>
+            <li><a href ="services">Services</a></li>
+            <li><a href ="contact us">Contact us</a></li>
+            <li><a href ="bookings">Bookings</a></li>
+           </ul>
+           <a href ="#" class="action_btn">Make An Appointment</a>
+           </div>
+
+        </div> 
+      </header>
+      <main>
+        <div class="card">
+          <div class="box">
+              <img src="Images\img4.jpg" width="260px" height="200px">
+           
+            <h3>Online Consultation</h3>
+            <h5>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+               when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h5>
+          </div>
+            <div class="box">
+              <img src="Images\img2.jpg" width="260px" height="200px">
+           
+            <h3>prescription</h3>
+            <h5>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h5>
+          </div>
+            <div class="box">
+              <img src="Images\img3.jpg" width="260px" height="200px">
+            
+            <h3>Appointment</h3>
+            <h5>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h5>
+          </div>
+          </div>
+        </main>
+        <section class="ctn">
+          <div class="about">
+            <h1>About Us</h1>
+            <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+              It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+               and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+               Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+               when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+               It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+               It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                 and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h4>
+          </div>
+          <img src="images\img6.jpg" class="dek" width="550px" height="auto">
+        </section>
+        <section class="htn">
+          <div>
+            <script>
+              function validation(){
+                  var name = document.myform.name.value;
+                  var password = document.myform.password.value;
+                  if(name==null || name==""){
+                  alert("name can't be blank");
+                  return false;
+              }
+                  else if(password.length<6){
+                      alert("password must be atleast 6 characters long.");
+                      return false;
+                  }
+              }
+          </script>
+            <form class="kar" name="myform" action="text.html" onsubmit= "return validation()">
+              <lable>FirstName:</lable>
+              <input type="text" name="name" placeholder="firstname"><br/><br/>
+              <lable>Password:</lable>
+              <input type="password" name="password" placeholder="password"><br/><br/>
+              <input type="submit" value="Register">
+          </form>
+
+          </div>
+        </section>
+        <footer>
+          <ul>
+            <li>&copy;CopyRights</li>
+            <li>Term and conditions</li>
+          </ul>
+        </footer>
+  </body>
+</html>
